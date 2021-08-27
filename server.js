@@ -1,28 +1,12 @@
-// High order function example
-var redius = [3,4,8,6];
 
-const area = (redius) => {
-    return Math.PI * redius * redius;
-}
-
-const circum = (redius) => {
-    return 2 * Math.PI * redius;
-}
-
-const diameter = (redius) => {
-    return 2 * redius;
-}
-
-const calculate = (redius, logic) => {
-    const output = [];
-    for(let i=0; i<redius.length; i++) {
-        output.push(logic(redius[i]));
+function rotate(arr, n) {
+    for(let i = 0; i < n; i++) {
+        let el = arr.shift();
+        arr.push(el);
     }
-    return output;
+    return arr;
 }
 
-console.log(calculate(redius, area));
-console.log(calculate(redius, diameter));
-console.log(calculate(redius, circum));
-
-
+let arr = [1,2,3,4,5];
+var n = 3;
+console.log(rotate(arr, n));
