@@ -1,6 +1,6 @@
 
-// Replace "l" with "X"
-// 'hello world' ---> 'heXXo worXd'
+// Replace "w" with "v"
+// 'hii i am web dewloper' ---> 'hii i am veb devloper'
 
 function replaceChar(inputStr, replaceThis, withThis) {
     let retVal = [];
