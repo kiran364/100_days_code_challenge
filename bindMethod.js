@@ -10,7 +10,7 @@ const myObject = {
   // The function gets invoked at the global scope
   // expected output: undefined
   
-  const boundGetX = unboundGetX.bind(myObject);
+  const boundGetX = myObject.getX.bind(myObject);
   console.log("after bind() object with function", boundGetX());
   // expected output: 42
   
