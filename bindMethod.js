@@ -14,3 +14,14 @@ const myObject = {
   console.log("after bind() object with function", boundGetX());
   // expected output: 42
   
+
+  const myObject2 = {
+      x: 42
+  }
+
+  function getX2() {
+      console.log(`value of x after binding getX2() with object myObject2 is ${this.x}`)
+  }
+
+  let bindFun = getX2.bind(myObject2);
+  bindFun();
