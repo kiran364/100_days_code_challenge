@@ -1,4 +1,3 @@
-
 // Javascript program to implement Queue using
 // two stacks with costly enQueue()
 class Queue{	
