@@ -166,19 +166,19 @@
 
 // console.log('largest sum is ', largestSum([1, 2, 3, 4, 3, 5, 4, 6, 7, 8, 9, 5], 4));
 
-const findDuplicate = (array) => {
-    let duplicate = {};
-    let flag = 0;
-    array.forEach(element => {
-        if(duplicate[element]){
-            console.log(element)
-            flag = 1;
-        }else{
-            duplicate[element] = element
-        }
-    });
-    if(flag == 0){
-        console.log('no dupicate elemet in array');
-    }
-}
-findDuplicate([1, 2, 3, 4, 5, 3, 6]);
+// const findDuplicate = (array) => {
+//     let duplicate = {};
+//     let flag = 0;
+//     array.forEach(element => {
+//         if(duplicate[element]){
+//             console.log(element)
+//             flag = 1;
+//         }else{
+//             duplicate[element] = element
+//         }
+//     });
+//     if(flag == 0){
+//         console.log('no dupicate elemet in array');
+//     }
+// }
+// findDuplicate([1, 2, 3, 4, 5, 3, 6]);
