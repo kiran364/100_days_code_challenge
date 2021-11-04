@@ -182,3 +182,33 @@
 //     }
 // }
 // findDuplicate([1, 2, 3, 4, 5, 3, 6]);
+
+
+
+// Given an integer array, find the maximum length of subarray whose sum is zero.
+// Example: [11, 1, 0, -1, 7, -5, -2, 100]
+             
+// Ans => Maxlength = 6 ( from index 1 to 7)
+
+function subArray (array){
+    let len = array.length;
+    let subArray = [];
+    let maxLength = 0; 
+    let tempLength;
+    for(let i=0; i<len; i++){
+        let sumZero = 0;
+        for(let j=i; j<len; j++){        
+            sumZero = sumZero + array[j]
+            if(sumZero == 0){
+                tempLength = j - i + 1;
+                if(maxLength < tempLength){
+                    maxLength = tempLength
+                }
+                subArray.push([i, j]);  
+            }
+        }
+    }
+    return maxLength;
+}
+
+console.log(`maxLength = ${subArray([11, 1, 0, -1, 7, -5, -2, 100])}`);
