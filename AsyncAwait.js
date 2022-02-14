@@ -1,3 +1,5 @@
+//print 1 to 5 number after each and avery 2 second using async, await, promise  
+
 const abc = (num) => {
   return promise = new Promise((resolve, reject) => {
       setTimeout(() => {
